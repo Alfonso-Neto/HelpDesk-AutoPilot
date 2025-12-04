@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelpDesk AutoPilot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🤖 HelpDesk AutoPilot</h1>
+      <p>Assistente de Suporte Nível 1</p>
+    </header>
+
+    <div id="chat-container" class="chat-container">
+      <div class="message bot-message">
+        <div class="message-content">
+          <p>Olá! Sou o assistente de Suporte Nível 1.</p>
+          <p>Vou ajudá-lo a resolver seu problema. Descreva o que está acontecendo:</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-container">
+      <textarea 
+        id="user-input" 
+        placeholder="Descreva seu problema aqui..."
+        rows="3"
+      ></textarea>
+      <button id="send-btn" onclick="sendMessage()">Enviar</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{
+  "name": "helpdesk-autopilot",
+  "version": "1.0.0",
+  "description": "Sistema inteligente de atendimento de Suporte Nível 1 com interface web e integração com Notion e Supabase",
+  "author": "Seu Nome <seu.email@exemplo.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/helpdesk-autopilot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seu-usuario/helpdesk-autopilot/issues"
+  },
+  "homepage": "https://github.com/seu-usuario/helpdesk-autopilot#readme",
+  "keywords": [
+    "helpdesk",
+    "support",
+    "automation",
+    "chatbot",
+    "notion",
+    "supabase",
+    "typescript",
+    "nodejs"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "web": "node dist/server.js",
+    "dev:web": "ts-node src/server.ts",
+    "watch": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^20.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.3.0",
+    "@supabase/supabase-js": "^2.86.2",
+    "axios": "^1.13.2",
+    "dotenv": "^16.6.1",
+    "express": "^5.2.1",
+    "openai": "^6.10.0"
+  }
+}
